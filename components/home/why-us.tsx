@@ -2,12 +2,26 @@ export default function WhyUs() {
     const data = [
         {
             title: "Apakah platform ini sudah berpengalaman ?",
-            desc: 'Melalui platform kami yang sudah berjalan selama <span class="font-bold">20 tahun</span> dalam mengelola limbah dapat menghubungkan berbagai penjual dan pembeli limbah. Dan juga, terdapat layanan yang membantu pelanggan dengan menyederhanakan pengelolaan limbah anda dengan One Package Service.',
+            desc: 'Melalui platform kami yang sudah berjalan selama <span class="font-bold underline">20 tahun</span> dalam mengelola limbah dapat menghubungkan berbagai penjual dan pembeli limbah. Dan juga, terdapat layanan yang membantu pelanggan dengan menyederhanakan pengelolaan limbah anda dengan One Package Service.',
         },
 		{
 			title: "Apakah aman menggunakan layanan ini ?",
-			desc: "Platform website yang sudah terdaftar <span class='font-bold'>pajak</span> memberikan kepercayaan kepada pengguna atau pelanggan bahwa transaksi yang mereka lakukan mematuhi hukum perpajakan dan turut berkontribusi pada penerimaan negara.",
+			desc: "Platform website yang sudah terdaftar <span class='font-bold underline'>pajak</span> memberikan kepercayaan kepada pengguna atau pelanggan bahwa transaksi yang mereka lakukan mematuhi hukum perpajakan dan turut berkontribusi pada penerimaan negara.",
+		},
+		{
+			title: "Seperti apa pelayanan di Limbah Kami ?",
+			desc: "Layanan Limbah Kami <span class='font-bold underline'>disesuaikan</span> dengan permintaan klien untuk solusi pengelolaan limbah yang efisien dan sesuai. Dengan personalisasi, kami memahami kebutuhan unik klien dan mengembangkan rencana yang optimal. Kami membantu klien berkontribusi pada keberlanjutan lingkungan dan memenuhi tanggung jawab sosial mereka.",
+		},
+		{
+			title: "Apakah ada pelayanan penjemputan limbah ?",
+			desc: "Limbah Kami menawarkan <span class='font-bold underline'>layanan penjemputan limbah</span> di lokasi pelanggan menggunakan armada kami sendiri. Layanan ini efisien, aman, dan sesuai peraturan lingkungan. Kami memberikan penanganan yang andal dan tepat waktu untuk pengelolaan limbah Anda.",
+		},
+		{
+			title: "Bagaimana dengan harga yang ditawarkan ?",
+			desc: "Limbah Kami menawarkan <span class='font-bold underline'>harga terbaik</span> dalam pembelian limbah. Kami menghargai nilai limbah sebagai sumber daya dan memberikan penawaran kompetitif kepada penjual limbah. Keuntungan ekonomis dan praktik daur ulang berkelanjutan menjadi fokus kami.",
 		}
+
+
     ];
     return (
         <section className="min-w-screen animation-fade animation-delay tails-selected-element relative z-10 py-16">

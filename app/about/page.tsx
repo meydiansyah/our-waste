@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import HeaderAbout from "@/components/about/header";
 import Testimonials from "@/components/home/testimonials";
@@ -18,10 +19,8 @@ export default function AboutPage() {
                         <div className="h-[1/6] w-full">
                             <div
                                 className="aspect-[3/1] overflow-hidden rounded-md shadow-xl sm:rounded-xl "
-                                data-rounded="rounded-xl"
-                                data-rounded-max="rounded-full"
                             >
-                                <img src="/home_1.jpg" className="" />
+                                <img src="/home_1.jpg" className="" alt=""/>
                             </div>
                         </div>
                     </Parallax>

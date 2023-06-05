@@ -37,7 +37,7 @@ export const listNavs = [
         ],
     },
     {
-        url: "/",
+        url: "/contact-us",
         title: "Contact Us",
     },
 ];
