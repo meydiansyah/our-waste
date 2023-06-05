@@ -9,7 +9,7 @@ import WhyUs from "@/components/home/why-us";
 import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 import Balancer from "react-wrap-balancer";
 
-export function ParallaxHead() {
+function ParallaxHead() {
     const parallax = useParallax<HTMLDivElement>({
         easing: [1, 0, 0.5, 0.1],
         opacity: [1, 0],
