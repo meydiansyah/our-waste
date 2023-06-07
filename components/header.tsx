@@ -8,7 +8,6 @@ export default function Header({title, subTitle, action } : {
 }) {
     return (
         <div className="z-10 w-full max-w-2xl px-3 xl:px-0">
-			{action}
             <h1
                 className="font-display animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
                 style={{
@@ -27,13 +26,9 @@ export default function Header({title, subTitle, action } : {
             >
                 <Balancer>{subTitle}</Balancer>
             </p>
-            <div
-                className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
-                style={{
-                    animationDelay: "0.3s",
-                    animationFillMode: "forwards",
-                }}
-            ></div>
+			<div className="py-8">
+			{action}
+				</div>
         </div>
     );
 }
