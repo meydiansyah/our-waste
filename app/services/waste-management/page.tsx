@@ -3,7 +3,7 @@
 import Header from "@/components/header";
 import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 
-export function ParallaxComponent() {
+function ParallaxComponent() {
     const parallax = useParallax<HTMLDivElement>({
         easing: [1, 0, 0.3, 1],
         opacity: [0, 1],

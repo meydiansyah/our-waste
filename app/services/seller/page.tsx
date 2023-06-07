@@ -4,7 +4,7 @@ import Header from "@/components/header";
 import { plastics, scraps } from "@/lib/const/wastes";
 import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 
-export function ParallaxComponent() {
+function ParallaxComponent() {
     const parallax = useParallax<HTMLDivElement>({
         easing: [1, 0, 0.5, 0.1],
         opacity: [1, 0],
