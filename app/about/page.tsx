@@ -1,17 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import HeaderAbout from "@/components/about/header";
-import Testimonials from "@/components/home/testimonials";
+import Header from "@/components/header";
 import {
     Parallax,
-    ParallaxBanner,
     ParallaxProvider,
 } from "react-scroll-parallax";
 
 export default function AboutPage() {
     return (
         <ParallaxProvider scrollAxis="vertical">
-            <HeaderAbout />
+			<Header title="Limbah Kami" subTitle="Optimalkan Pengelolaan Limbah Anda dengan Solusi Kami yang Efisien dan Bertanggung Jawab" />
 
             <section className="tails-selected-element my-18 z-10 bg-transparent px-2 py-12 md:px-0">
                 <div className="container mx-auto max-w-6xl items-center px-8 xl:px-5">

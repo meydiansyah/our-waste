@@ -1,13 +1,8 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 "use client";
-import Footer from "@/components/footer";
-import HeaderHome from "@/components/home/header";
-import OurFeatures from "@/components/home/price";
-import Testimonials from "@/components/home/testimonials";
+import Content from "@/components/content";
+import Header from "@/components/header";
 import WhyUs from "@/components/home/why-us";
 import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
-import Balancer from "react-wrap-balancer";
 
 function ParallaxHead() {
     const parallax = useParallax<HTMLDivElement>({
@@ -43,117 +38,68 @@ function ParallaxHead() {
 export default function Home() {
     return (
         <ParallaxProvider scrollAxis="vertical">
-            <HeaderHome />
+            <Header
+                title="Berikan dampak positif bagi dunia"
+                subTitle="Mari mengubah limbah menjadi sumber daya berharga"
+                action={
+                    <a
+                        href="/services"
+                        className="transition-color mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#a5d163] px-7 py-2 duration-500 ease-in-out hover:bg-[#b6d982]"
+                    >
+                        <p className="text-sm font-semibold text-white">
+                            Pelajari Lebih Lanjut
+                        </p>
+                    </a>
+                }
+            />
             <ParallaxHead />
-            <section className="tails-selected-element z-10 my-20 bg-transparent px-2 md:px-0">
-                <div className="container mx-auto max-w-6xl items-center px-8 xl:px-5">
-                    <div className="flex flex-wrap items-center sm:-mx-3">
-                        <div className="w-full md:w-1/2 md:px-3">
-                            <div className="w-full space-y-6 pb-6 sm:max-w-md sm:pr-5 md:space-y-4 md:pb-0 lg:max-w-lg lg:space-y-8 lg:pr-0 xl:space-y-9">
-                                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
-                                    <span className="block xl:inline">
-                                        Pembelian{" "}
-                                    </span>
-                                    {/*<span className="block text-[#468d49] xl:inline">*/}
-                                    <span className="w-full bg-gradient-to-r from-[#468d49] to-[#9dcd5d] bg-clip-text text-transparent lg:inline">
-                                        Limbah
-                                    </span>
-                                </h1>
-                                <p className="mx-auto text-base text-gray-500 sm:max-w-md md:max-w-3xl lg:text-xl">
-                                    Limbah Kami dapat melakukan pembelian limbah
-                                    perusahaan dengan sistem timbang bayar
-                                </p>
-                                <div className="relative flex flex-col sm:flex-row sm:space-x-4">
-                                    <a
-                                        href="https://twitter.com/steventey/status/1613928948915920896"
-                                        target="_blank"
-                                        className="transition-color mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#a5d163] px-7 py-2 duration-500 ease-in-out hover:bg-[#b6d982]"
-                                    >
-                                        <p className="text-sm font-semibold text-white">
-                                            Baca selengkapnya{" "}
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-full md:w-1/2">
-                            <Parallax speed={25}>
-                                <div
-                                    className="h-auto w-full overflow-hidden rounded-md shadow-xl sm:rounded-xl"
-                                    data-rounded="rounded-xl"
-                                    data-rounded-max="rounded-full"
-                                >
-                                    <img src="/home_2.jpg" className="" />
-                                </div>
-                            </Parallax>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="tails-selected-element z-10 bg-transparent p-2 md:px-0">
-                <div className="container mx-auto max-w-6xl items-center px-8 xl:px-5">
-                    <div className="flex flex-wrap items-center sm:-mx-3">
-                        <div className="w-full md:w-1/2">
-                            <Parallax speed={25}>
-                                <div
-                                    className="h-auto w-full overflow-hidden rounded-md shadow-xl sm:rounded-xl"
-                                    data-rounded="rounded-xl"
-                                    data-rounded-max="rounded-full"
-                                >
-                                    <img src="/home_3.jpg" className="" />
-                                </div>
-                            </Parallax>
-                        </div>
-                        <div className="w-full md:w-1/2 md:px-3">
-                            <div className="w-full space-y-6 pb-6 sm:max-w-md sm:pl-5 md:space-y-4 md:pb-0 lg:max-w-lg lg:space-y-8 lg:pr-0 xl:space-y-9">
-                                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
-                                    <span className="block xl:inline">
-                                        One Package{" "}
-                                    </span>
-                                    {/*<span className="block text-[#468d49] xl:inline">*/}
-                                    <span className="w-full bg-gradient-to-r from-[#468d49] to-[#9dcd5d] bg-clip-text text-transparent lg:inline">
-                                        Waste Management{" "}
-                                    </span>
-                                </h1>
-                                <p className="mx-auto text-base text-gray-500 sm:max-w-md md:max-w-3xl lg:text-xl">
-                                    Konsep yang kami tawarkan kepada perusahaan
-                                    untuk memudahkan dan menyederhanakan
-                                    pengelolaan limbah mereka secara menyeluruh.
-                                </p>
-                                <div className="relative flex flex-col sm:flex-row sm:space-x-4">
-                                    <a
-                                        href="https://twitter.com/steventey/status/1613928948915920896"
-                                        target="_blank"
-                                        className="transition-color mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#a5d163] px-7 py-2 duration-500 ease-in-out hover:bg-[#b6d982]"
-                                    >
-                                        <p className="text-sm font-semibold text-white">
-                                            Baca selengkapnya
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Content
+                title="Pembelian"
+                subTitle="Limbah"
+                description="Limbah Kami dapat melakukan pembelian limbah perusahaan dengan sistem timbang bayar"
+                src="/home_2.jpg"
+            >
+                <a
+                    href="/services/buy"
+                    className="transition-color mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#a5d163] px-7 py-2 duration-500 ease-in-out hover:bg-[#b6d982]"
+                >
+                    <p className="text-sm font-semibold text-white">
+                        Baca selengkapnya{" "}
+                    </p>
+                </a>
+            </Content>
+            <Content
+                title="One Package"
+                subTitle="Waste Management"
+                description="Konsep yang kami tawarkan kepada perusahaan untuk memudahkan dan menyederhanakan pengelolaan limbah mereka secara menyeluruh."
+                src="/home_3.jpg"
+                reverse
+            >
+                <a
+                    href="/"
+                    className="transition-color mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#a5d163] px-7 py-2 duration-500 ease-in-out hover:bg-[#b6d982]"
+                >
+                    <p className="text-sm font-semibold text-white">
+                        Baca selengkapnya{" "}
+                    </p>
+                </a>
+            </Content>
             <WhyUs />
             <section className="tails-selected-element z-10 my-10 bg-transparent px-2 md:px-0">
                 <div className="container mx-auto max-w-6xl items-center px-8 xl:px-5">
-                    <div className="flex space-x-4 flex-col items-start justify-between border-0 border-gray-200 text-gray-900 lg:flex-row lg:items-center space-y-4">
-						<div className="mx:px-3 box-border flex-1 border-solid text-center sm:text-left">
+                    <div className="flex flex-col items-start justify-between space-x-4 space-y-4 border-0 border-gray-200 text-gray-900 lg:flex-row lg:items-center">
+                        <div className="mx:px-3 box-border flex-1 border-solid text-center sm:text-left">
                             <h2 className="m-0 border-0 border-gray-200 text-left text-2xl font-semibold leading-tight tracking-tight text-black sm:text-5xl">
-                                Kategori Sampah
+                                Tertarik menggunakan jasa kami ?
                             </h2>
                             <p className="mt-2 border-0 border-gray-200 text-left text-xl text-gray-900 sm:text-xl">
-                                Beberapa kategori sampah yang dapat kamu
-                                tukarkan di Limbah Kami.
+                                Temukan beberapa keuntungan yang kamu peroleh
+                                ketika bergabung dengan kami.
                             </p>
                         </div>
                         <a
-                            href="https://twitter.com/steventey/status/1613928948915920896"
-                            target="_blank"
-                            rel="noreferrer"
-							className="transition-color md:mx-auto flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#a5d163] px-7 py-4 duration-500 ease-in-out hover:bg-[#b6d982]"
+                            href="/services"
+                            className="transition-color flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#a5d163] px-7 py-4 duration-500 ease-in-out hover:bg-[#b6d982] md:mx-auto"
                         >
                             <p className="inline-flex text-sm font-semibold text-white">
                                 Pelajari Lebih Lanjut

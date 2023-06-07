@@ -55,7 +55,7 @@ const Dropdown = ({
                                                     <li key={sub["title"]}>
                                                         <a
                                                             className="block px-4 py-2 whitespace-no-wrap hover:rounded-md hover:bg-gray-200"
-                                                            href="#"
+                                                            href={sub.url}
                                                         >
                                                             {sub["title"]}
                                                         </a>
@@ -68,7 +68,7 @@ const Dropdown = ({
                                     <li key={e.title}>
                                         <a
                                             className="block px-4 py-2 whitespace-no-wrap hover:rounded-md hover:bg-gray-200"
-                                            href="#"
+                                            href={e.url}
                                         >
                                             {e["title"]}
                                         </a>

@@ -6,41 +6,7 @@ import useScroll from "@/lib/hooks/use-scroll";
 import "react-dropdown/style.css";
 import Dropdown from "./dropdown";
 import { usePathname, useRouter } from "next/navigation";
-
-export const listNavs = [
-    {
-        url: "/about",
-        title: "About",
-    },
-    {
-        url: "/",
-        title: "Services",
-        subMenu: [
-            {
-                url: "/",
-                title: "Seller",
-            },
-            {
-                url: "/",
-                title: "Waste Management",
-                subMenu: [
-                    {
-                        url: "/",
-                        title: "Non-Sortir",
-                    },
-                    {
-                        url: "/",
-                        title: "Limbah Serap",
-                    },
-                ],
-            },
-        ],
-    },
-    {
-        url: "/contact-us",
-        title: "Contact Us",
-    },
-];
+import {listNavs} from "@/lib/const/wastes";
 
 export default function NavBar() {
     const scrolled = useScroll(100);

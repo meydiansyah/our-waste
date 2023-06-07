@@ -39,13 +39,13 @@ export default function Service() {
             <section className=" z-10  mx-auto max-w-6xl px-2 py-8 md:px-0">
                 <div className="flex w-full items-center space-x-4  px-8 sm:items-center xl:px-5">
                     <a
-                        href="/services"
+                        href="/services/seller"
                         className="transition-color flex max-w-fit animate-fade-up items-center justify-center overflow-hidden rounded-full bg-[#a5d163] px-7 py-3 text-sm font-semibold text-white duration-500 ease-in-out hover:bg-[#b6d982]"
                     >
                         Pembelian Limbah
                     </a>
                     <a
-                        href="/services"
+                        href="/services/waste-management"
                         className="transition-color flex max-w-fit animate-fade-up items-center justify-center overflow-hidden rounded-full bg-[#a5d163] px-7 py-3 text-sm font-semibold text-white duration-500 ease-in-out hover:bg-[#b6d982]"
                     >
                         One Package Service
