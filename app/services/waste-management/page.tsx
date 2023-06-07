@@ -3,33 +3,6 @@
 import Header from "@/components/header";
 import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 
-function ParallaxComponent() {
-    const parallax = useParallax<HTMLDivElement>({
-        easing: [1, 0, 0.3, 1],
-        opacity: [0, 1],
-    });
-    return (
-        <Parallax speed={-30}>
-            <section
-                ref={parallax.ref}
-                className="tails-selected-element z-10 my-20 h-auto rounded-md bg-[#468d49]"
-            >
-                <div className="mx-auto max-w-7xl px-10 py-12">
-                    <div className="mx-auto w-full text-left md:text-center">
-                        <h1 className="mx-auto max-w-5xl text-3xl font-extrabold leading-none tracking-normal text-white sm:text-3xl md:text-3xl md:tracking-tight lg:text-5xl">
-                            Menjadi mitra yang dapat
-                            <span className="w-full text-gray-900 lg:inline">
-                                {" diandalkan dan membantu "}
-                            </span>
-                            perusahaan mencapai tujuan keberlanjutan mereka
-                            dengan lebih efektif dan efisien.
-                        </h1>
-                    </div>
-                </div>
-            </section>
-        </Parallax>
-    );
-}
 export default function WasteManagementPage() {
     return (
         <ParallaxProvider scrollAxis="vertical">
@@ -93,7 +66,22 @@ export default function WasteManagementPage() {
                     </Parallax>
                 </ParallaxProvider>
             </section>
-            <ParallaxComponent />
+<section
+                className="tails-selected-element z-10 my-20 h-auto rounded-md bg-[#468d49]"
+            >
+                <div className="mx-auto max-w-7xl px-10 py-12">
+                    <div className="mx-auto w-full text-left md:text-center">
+                        <h1 className="mx-auto max-w-5xl text-3xl font-extrabold leading-none tracking-normal text-white sm:text-3xl md:text-3xl md:tracking-tight lg:text-5xl">
+                            Menjadi mitra yang dapat
+                            <span className="w-full text-gray-900 lg:inline">
+                                {" diandalkan dan membantu "}
+                            </span>
+                            perusahaan mencapai tujuan keberlanjutan mereka
+                            dengan lebih efektif dan efisien.
+                        </h1>
+                    </div>
+                </div>
+            </section>
         </ParallaxProvider>
     );
 }

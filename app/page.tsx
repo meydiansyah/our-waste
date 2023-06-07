@@ -60,7 +60,7 @@ export default function Home() {
                 src="/home_2.jpg"
             >
                 <a
-                    href="/services/buy"
+                    href="/services/seller"
                     className="transition-color mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#a5d163] px-7 py-2 duration-500 ease-in-out hover:bg-[#b6d982]"
                 >
                     <p className="text-sm font-semibold text-white">
@@ -76,7 +76,7 @@ export default function Home() {
                 reverse
             >
                 <a
-                    href="/"
+                    href="/services/waste-management"
                     className="transition-color mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-[#a5d163] px-7 py-2 duration-500 ease-in-out hover:bg-[#b6d982]"
                 >
                     <p className="text-sm font-semibold text-white">
