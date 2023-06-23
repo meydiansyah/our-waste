@@ -14,16 +14,6 @@ export const listNavs = [
             {
                 url: "/services/waste-management",
                 title: "Waste Management",
-                // subMenu: [
-                //     {
-                //         url: "/",
-                //         title: "Non-Sortir",
-                //     },
-                //     {
-                //         url: "/",
-                //         title: "Limbah Serap",
-                //     },
-                // ],
             },
         ],
     },
@@ -32,6 +22,7 @@ export const listNavs = [
         title: "Contact Us",
     },
 ];
+
 export const scraps = [
     "Plongan",
     "H1: H1 scrap mengacu pada Besi kelas super,. Memiliki panjang 2 milimeter dan diproduksi oleh perusahaan manufaktur atau dari kehancuran infrastruktur. ",
@@ -44,3 +35,27 @@ export const scraps = [
 ];
 
 export const plastics = ["HD,PE", "PP", "ABS", "HD Blow"];
+
+export const category = [
+	{
+		title: "Limbah",
+		subTitle: "Scrap",
+		description: "Ada beberapa jenis scrap dan setiap jenis memiliki nilai yang berbeda:",
+		src: "/scrap.jpg",
+		content: scraps,
+	},
+		{
+		title: "Limbah",
+		subTitle: "Plastik",
+		description: "Ada beberapa jenis plastik yang saat ini Limbah Kami terima:",
+		src: "/home_5.jpg",
+		content: scraps,
+	},
+		{
+		title: "Limbah",
+		subTitle: "Kardus",
+		description: "Menerima semua jenis limbah kardus.",
+		src: "/kardus.jpg",
+	},
+];
+

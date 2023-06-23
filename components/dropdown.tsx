@@ -31,16 +31,14 @@ const Dropdown = ({
     return (
         <Popover
             content={
-                <ul className="w-full p-2 sm:w-50">
+                <ul className="sm:w-50 w-full p-2">
                     {listMenu.map((e) => {
                         return (
                             <>
                                 {e.subMenu ? (
                                     <li key={e.title} onClick={toggleMulti}>
-                                        <button className="flex items-center justify-between px-4 py-2 hover:rounded-md hover:bg-gray-200 transition duration-300 ease-in-out hover:text-black space-x-2">
-                                            <span >
-                                                {e.title}
-                                            </span>
+                                        <button className="flex items-center justify-between space-x-2 px-4 py-2 transition duration-300 ease-in-out hover:rounded-md hover:bg-gray-200 hover:text-black">
+                                            <span>{e.title}</span>
                                             <ChevronDown
                                                 className={`h-4 w-4 transition-all ${
                                                     multiDropdown
@@ -50,11 +48,11 @@ const Dropdown = ({
                                             />
                                         </button>
                                         {multiDropdown && (
-                                            <ul className="absolute w-full p-2 mt-4 ml-20 text-gray-700 bg-white rounded-md sm:w-40">
+                                            <ul className="absolute ml-20 mt-4 w-full rounded-md bg-white p-2 text-gray-700 sm:w-40">
                                                 {e.subMenu.map((sub) => (
                                                     <li key={sub["title"]}>
                                                         <a
-                                                            className="block px-4 py-2 whitespace-no-wrap hover:rounded-md hover:bg-gray-200"
+                                                            className="whitespace-no-wrap block px-4 py-2 hover:rounded-md hover:bg-gray-200"
                                                             href={sub.url}
                                                         >
                                                             {sub["title"]}
@@ -67,7 +65,7 @@ const Dropdown = ({
                                 ) : (
                                     <li key={e.title}>
                                         <a
-                                            className="block px-4 py-2 whitespace-no-wrap hover:rounded-md hover:bg-gray-200"
+                                            className="whitespace-no-wrap block px-4 py-2 hover:rounded-md hover:bg-gray-200"
                                             href={e.url}
                                         >
                                             {e["title"]}

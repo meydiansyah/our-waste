@@ -1,6 +1,8 @@
 "use client";
+import Carousel from "@/components/carousel";
 import Content from "@/components/content";
 import Header from "@/components/header";
+import CategoryWaste from "@/components/home/waste-category";
 import WhyUs from "@/components/home/why-us";
 import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
 
@@ -84,6 +86,7 @@ export default function Home() {
                     </p>
                 </a>
             </Content>
+            <CategoryWaste />
             <WhyUs />
             <section className="tails-selected-element z-10 my-10 bg-transparent px-2 md:px-0">
                 <div className="container mx-auto max-w-6xl items-center px-8 xl:px-5">

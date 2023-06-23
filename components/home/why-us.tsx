@@ -20,11 +20,9 @@ export default function WhyUs() {
 			title: "Bagaimana dengan harga yang ditawarkan ?",
 			desc: "Limbah Kami menawarkan <span class='font-bold underline'>harga terbaik</span> dalam pembelian limbah. Kami menghargai nilai limbah sebagai sumber daya dan memberikan penawaran kompetitif kepada penjual limbah. Keuntungan ekonomis dan praktik daur ulang berkelanjutan menjadi fokus kami.",
 		}
-
-
     ];
     return (
-        <section className="min-w-screen animation-fade animation-delay tails-selected-element relative z-10 py-16">
+        <section className="min-w-screen animation-fade animation-delay max-w-6xl tails-selected-element relative z-10 py-16">
             <div className="container mx-auto px-0 px-8 sm:px-12 xl:px-5">
                 <p className="sm:text-normal text-left text-xs font-bold uppercase text-[#a5d163] sm:mx-6 sm:text-center sm:font-bold">
                     Limbah Kami
@@ -32,22 +30,24 @@ export default function WhyUs() {
                 <h3 className="mt-1 text-left text-2xl font-bold text-gray-800 sm:mx-0 sm:mx-6 sm:text-center sm:text-3xl md:text-4xl lg:text-5xl">
                     Why us ?
                 </h3>
-                {data.map((e) => (
+				<div className="grid lg:grid-cols-2 gap-8 mt-10">
+					                {data.map((e) => (
                     <div
                         key={e.title}
-                        className="mx-auto my-10 w-full rounded-lg border border-gray-200 bg-white px-6 py-6 sm:px-8 sm:py-8 sm:shadow md:px-12 lg:w-5/6 xl:w-2/3"
+                        className="mx-auto w-full rounded-lg border border-gray-200 bg-white px-6 py-6 sm:px-8 sm:py-8 sm:shadow md:px-12"
                         data-rounded="rounded-lg"
                         data-rounded-max="rounded-full"
                     >
-                        <h3 className="text-lg font-bold text-[#468d49] sm:text-xl md:text-2xl">
+                        <h3 className="text-normal font-bold text-[#468d49] sm:text-lg md:text-xl">
                             {e.title}
                         </h3>
                         <p
-                            className="md:text-normal mt-2 text-base text-gray-600 sm:text-lg"
+                            className="md:text-normal mt-2 text-sm text-gray-600 sm:text-base"
                             dangerouslySetInnerHTML={{ __html: e.desc }}
                         />
                     </div>
                 ))}
+				</div>
             </div>
         </section>
     );

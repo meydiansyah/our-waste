@@ -1,8 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { Suspense, useRef } from "react";
-import { ParallaxProvider } from "react-scroll-parallax";
+import { Suspense } from "react";
 
 export const metadata = {
     title: "Limbah Kami",
@@ -18,13 +17,12 @@ export default async function RootLayout({
     return (
         <html lang="en">
             <body>
-                <div className="fixed h-screen w-full bg-gradient-to-br from-[#f2fee0] via-white to-[#ddffaf]" />
                 <Suspense fallback="...">
                     <Navbar />
                 </Suspense>
                 <main className="flex min-h-screen w-full flex-col items-center justify-center py-32">
                     {children}
-            <Footer />
+                    <Footer />
                 </main>
             </body>
         </html>

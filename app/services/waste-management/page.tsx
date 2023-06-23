@@ -66,9 +66,7 @@ export default function WasteManagementPage() {
                     </Parallax>
                 </ParallaxProvider>
             </section>
-<section
-                className="tails-selected-element z-10 my-20 h-auto rounded-md bg-[#468d49]"
-            >
+            <section className="tails-selected-element z-10 my-20 h-auto rounded-md bg-[#468d49]">
                 <div className="mx-auto max-w-7xl px-10 py-12">
                     <div className="mx-auto w-full text-left md:text-center">
                         <h1 className="mx-auto max-w-5xl text-3xl font-extrabold leading-none tracking-normal text-white sm:text-3xl md:text-3xl md:tracking-tight lg:text-5xl">
