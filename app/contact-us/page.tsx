@@ -29,17 +29,18 @@ export default function ContactUs() {
                     >
                         <Balancer>Contact Us</Balancer>
                     </h1>
-                    <div className="my-8 flex flex-row space-x-4">
-                        <div className="mb-8 flex w-1/2 justify-center space-x-4">
+                    <div className="my-8 flex flex-col space-y-8 items-center">
+                        <div className="mb-8 w-full flex max-w-6xl justify-center space-x-4 rounded-md shadow-lg">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15863.518721462713!2d106.8035036!3d-6.2795452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1cba7156625%3A0x6b1dc8021f3fc436!2sBLU%20Coffee%20%26%20Kitchen!5e0!3m2!1sid!2sid!4v1685968028375!5m2!1sid!2sid"
-                                width="500"
-                                height="350"
+                                width="100%"
+                                height="500"
                                 style={{ border: 0 }}
+								className="rounded-md"
                             ></iframe>
                         </div>
 
-                        <div className="flex flex-col w-1/2 justify-start space-y-8">
+                        <div className="flex flex-row justify-start space-x-8">
                             <a
                                 href="https://wa.me/08197566793"
                                 target="__blank"
