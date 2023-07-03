@@ -5,12 +5,10 @@ import Link from "next/link";
 import useScroll from "@/lib/hooks/use-scroll";
 import "react-dropdown/style.css";
 import Dropdown from "./dropdown";
-import { usePathname, useRouter } from "next/navigation";
 import {listNavs} from "@/lib/const/wastes";
 
 export default function NavBar() {
     const scrolled = useScroll(100);
-    const pathName = usePathname();
     return (
         <>
             <div

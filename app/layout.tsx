@@ -17,6 +17,7 @@ export default async function RootLayout({
     return (
         <html lang="en">
             <body>
+                <div className="fixed h-screen w-full bg-gradient-to-br from-[#f2fee0] via-white to-[#ddffaf]" />
                 <Suspense fallback="...">
                     <Navbar />
                 </Suspense>

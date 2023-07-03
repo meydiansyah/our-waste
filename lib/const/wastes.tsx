@@ -9,7 +9,7 @@ export const listNavs = [
         subMenu: [
             {
                 url: "/services/seller",
-                title: "Seller",
+                title: "Pembelian Limbah",
             },
             {
                 url: "/services/waste-management",
